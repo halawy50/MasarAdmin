@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login_Delivery_Fragment">
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.masar.masaradmin.UI.HomePageFragment"
+        android:label="HomePageFragment" >
+        <action
+            android:id="@+id/action_homePageFragment_to_addNewCompanyFragment"
+            app:destination="@id/addNewCompanyFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_allComanyFragment"
+            app:destination="@id/allComanyFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_FAQ"
+            app:destination="@id/FAQ" />
+        <action
+            android:id="@+id/action_homePageFragment_to_login_Delivery_Fragment"
+            app:destination="@id/login_Delivery_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewCompanyFragment"
+        android:name="com.masar.masaradmin.UI.AddNewCompany.AddNewCompanyFragment"
+        android:label="AddNewCompanyFragment" />
+    <fragment
+        android:id="@+id/allComanyFragment"
+        android:name="com.masar.masaradmin.UI.AllComany.AllComanyFragment"
+        android:label="fragment_all_comany"
+        tools:layout="@layout/fragment_all_comany" >
+        <action
+            android:id="@+id/action_allComanyFragment_to_showComanyFragment"
+            app:destination="@id/showComanyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showComanyFragment"
+        android:name="com.masar.masaradmin.UI.AllComany.ShowComanyFragment"
+        android:label="fragment_show_comany"
+        tools:layout="@layout/fragment_show_comany" />
+    <fragment
+        android:id="@+id/FAQ"
+        android:name="com.masar.masaradmin.UI.FAQ.FAQ"
+        android:label="fragment_faq"
+        tools:layout="@layout/fragment_faq" />
+    <fragment
+        android:id="@+id/login_Delivery_Fragment"
+        android:name="com.masar.masaradmin.UI.Login.Login_Delivery_Fragment"
+        android:label="Login_Delivery_Fragment" >
+        <action
+            android:id="@+id/action_login_Delivery_Fragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+</navigation>

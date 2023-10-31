@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#F4F4F4"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_15sdp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameCamony"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="شركة الويلي"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/almarai"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/stateCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="تعمل حاليا"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/somar"
+            />
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
